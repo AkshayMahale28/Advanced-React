@@ -1,4 +1,4 @@
-mainContainer=document.getElementById('root')
+const mainContainer=document.getElementById('root')
 
 
 function customRender(createElemet,container){
@@ -13,6 +13,8 @@ function customRender(createElemet,container){
         console.log(prop);
         
         domElement.setAttribute(prop,createElemet.props[prop])
+     
+        
     }
 
      container.appendChild(domElement)
