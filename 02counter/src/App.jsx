@@ -6,25 +6,22 @@ function App() {
   const [Count, setCount] = useState(0);
 
   function addValue() {
-   setCount((prevCount)=>{
-    if (prevCount>=20) {
-      alert("You have reached the limit")
-      return prevCount
-      
-    }
-    return prevCount+1
-   })
-  
+    setCount((prevCount) => {
+      if (prevCount >= 20) {
+        alert("You have reached the limit");
+        return prevCount;
+      }
+      return prevCount + 1;
+    });
   }
 
   function removeValue() {
-    setCount((prevCount)=>{
-      if (prevCount <=0) {
-        return 0
-        
+    setCount((prevCount) => {
+      if (prevCount <= 0) {
+        return 0;
       }
-      return prevCount-1
-    })
+      return prevCount - 1;
+    });
   }
   return (
     <>
